@@ -1,3 +1,6 @@
+// Importation de modules
+import { useRef } from 'react'
+
 //Importations Modules
 import { NavLink } from 'react-router-dom'
 
@@ -5,58 +8,72 @@ import { NavLink } from 'react-router-dom'
 import './../css/navigation.css'
 
 export default function Navigation() {
+	const navRef = useRef()
+
+	const showNavBar = () => {
+		navRef.current.classList.toggle('responsive_nav')
+	}
+
 	return (
-		<div className='navigation'>
-			<ul className='main'>
-				<li>
-					<NavLink
-						to='/'
-						className={({ isActive }) => (isActive ? 'activeLink' : undefined)}>
-						Accueil
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to='/découvrir'
-						className={({ isActive }) => (isActive ? 'activeLink' : undefined)}>
-						Découvrir
-					</NavLink>
-					<ul className='sub'>
-						<li>
-							<NavLink
-								to='/pedagogie'
-								className={({ isActive }) =>
-									isActive ? 'activeLink' : undefined
-								}>
-								La pédagogie
-							</NavLink>
-						</li>
-						<li>
-							<NavLink
-								to='/siestes'
-								className={({ isActive }) =>
-									isActive ? 'activeLink' : undefined
-								}>
-								Les siestes nordiques
-							</NavLink>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<NavLink
-						to='/objectifs'
-						className={({ isActive }) => (isActive ? 'activeLink' : undefined)}>
-						Notre objectif
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to='/contact'
-						className={({ isActive }) => (isActive ? 'activeLink' : undefined)}>
-						Contact
-					</NavLink>
-				</li>
-			</ul>
+		<div>
+			<nav
+				className='navigation'
+				ref={navRef}>
+				<ul className='main'>
+					<li>
+						<NavLink
+							to='/'
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : undefined
+							}>
+							Accueil
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							to='/découvrir'
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : undefined
+							}>
+							Découvrir
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							to='/objectifs'
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : undefined
+							}>
+							Notre objectif
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							to='/contact'
+							className={({ isActive }) =>
+								isActive ? 'activeLink' : undefined
+							}>
+							Contact
+						</NavLink>
+					</li>
+					<button
+						className='nav-btn nav-close-btn'
+						onClick={showNavBar}>
+						<box-icon
+							name='x'
+							color='darkred'
+							size='lg'></box-icon>
+					</button>
+				</ul>
+			</nav>
+			<button
+				className='nav-btn'
+				onClick={showNavBar}>
+				<box-icon
+					name='menu'
+					color='#f37a17'
+					size='lg'></box-icon>
+			</button>
 		</div>
 	)
 }

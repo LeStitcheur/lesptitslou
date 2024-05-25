@@ -1,6 +1,6 @@
 footer {
 	width: 100%;
-	height: 20vh;
+	min-height: 20vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -29,4 +29,10 @@ footer p > a {
 .links > a:hover,
 footer p > a:hover {
 	color: #3d9be9;
+}
+
+@media only screen and (max-width: 1024px) {
+	.links {
+		flex-direction: column;
+	}
 }

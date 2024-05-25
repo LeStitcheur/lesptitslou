@@ -20,7 +20,8 @@
 
 h3 {
 	font-size: 1.5rem;
-	font-family: 'Poppins Bold';
+	font-family: 'Poppins';
+	font-weight: 600;
 	color: #f37a17;
 }
 
@@ -38,7 +39,8 @@ p {
 	background: #3d9be9;
 	color: #fefefe;
 	text-decoration: none;
-	font-family: 'Poppins Bold';
+	font-family: 'Poppins';
+	font-weight: 600;
 	transition: 0.3s;
 
 	&:hover {

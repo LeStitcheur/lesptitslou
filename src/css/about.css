@@ -41,7 +41,8 @@
 }
 
 .about__body__item > h5 {
-	font-family: 'Poppins Bold';
+	font-family: 'Poppins';
+	font-weight: 600;
 	font-size: 1rem;
 }
 
@@ -55,5 +56,6 @@
 .about__body__item > p {
 	margin: 15px;
 	color: #292929;
-	font-family: 'Poppins Extra Light';
+	font-family: 'Poppins';
+	font-weight: 300;
 }
