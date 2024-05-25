@@ -7,6 +7,7 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	font-family: 'Poppins';
+	/* border: 1px dashed red; */ /* <--- Décommenter pour débug le style */
 }
 
 /* Disposition de la page */
