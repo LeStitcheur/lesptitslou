@@ -31,7 +31,7 @@ export default function Navigation() {
 					</li>
 					<li>
 						<NavLink
-							to='/découvrir'
+							to='/decouvrir'
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : undefined
 							}>

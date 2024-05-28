@@ -43,6 +43,7 @@
 .contact__body__infos {
 	display: flex;
 	flex-flow: row wrap;
+	margin-top: 50px;
 }
 
 .contact__body__infos__card {

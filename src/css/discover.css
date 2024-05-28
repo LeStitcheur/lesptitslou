@@ -1,0 +1,91 @@
+.discover {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.discover__redirect {
+	width: 100%;
+	height: 100%;
+	max-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 0.5px solid #d3d3d3;
+	border-bottom: 0.5px solid #d3d3d3;
+}
+
+.discover__redirect a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #f37a17;
+	font-family: 'Poppins';
+	font-weight: 600;
+	border-left: 0.5px solid #d3d3d3;
+	border-right: 0.5px solid #d3d3d3;
+	transition: 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+	&:hover {
+		background: #f37a17;
+		color: #fefefe;
+	}
+}
+
+.discover__header {
+	width: 100%;
+	min-height: 450px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.discover__header__image,
+.discover__header__accroche {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.discover__header__image {
+	background: url(./../assets/images/generate-sieste-nordique-colored.webp);
+	background-size: cover;
+	background-position: bottom;
+	padding-left: 120px;
+}
+
+.discover__header__accroche {
+	background: #dddddd;
+	align-items: center;
+}
+
+hr {
+	width: 75px;
+	height: 3px;
+	background: #fefefe;
+}
+
+.discover h2 {
+	font-size: 2rem;
+	color: #f37a17;
+}
+
+.discover h4 {
+	font-size: 3rem;
+	color: #f37a17;
+	font-weight: 300;
+}
+
+.discover h5 {
+	font-size: 2.5rem;
+	color: #3d9be9;
+	font-weight: 300;
+}

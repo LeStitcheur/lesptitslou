@@ -74,7 +74,7 @@ export default function Contact() {
 				<div className='contact__footer__map'>
 					<iframe
 						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.2270539924148!2d6.203835912221553!3d49.36677657128642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47953b51f8bc5c71%3A0xe99dd45ef4e99b2d!2s41%20Bcle%20de%20la%20Tuilerie%2C%2057970%20Yutz!5e0!3m2!1sfr!2sfr!4v1716402965262!5m2!1sfr!2sfr'
-						allowfullscreen=''
+						allowFullScreen=''
 						loading='lazy'
 						referrerPolicy='no-referrer-when-downgrade'></iframe>
 				</div>

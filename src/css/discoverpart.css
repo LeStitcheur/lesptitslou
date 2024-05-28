@@ -1,0 +1,25 @@
+.discoverpart {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.discoverpart__header {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.discoverpart__header > h3 {
+	font-size: 1.5rem;
+}
+
+.discoverpart > p {
+	text-align: justify;
+	margin: 0 30px;
+}
