@@ -1,2 +1,4 @@
-User-agent : *
-Disallow : /assets/
+User-agent: *
+Allow: /
+
+Sitemap: https://www.lesptitslou.fr/sitemap.xml
