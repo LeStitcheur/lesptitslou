@@ -1,78 +1,73 @@
-// Importation modules
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules'
-
-// Importation CSS
-import 'swiper/css'
-import 'swiper/css/effect-coverflow'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
-
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 import './../css/gallery.css'
 
-// Importation médias
-import flyerRecto from './../assets/images/flyer-recto.jpg'
-import flyerVerso from './../assets/images/flyer-verso.jpg'
+// Import images
+import depliant from './../assets/images/depliant.jpg'
+import depliantPage2 from './../assets/images/depliant-page-2.jpg'
 import microCreche from './../assets/images/micro-crèche-default.jpg'
-import siesteNordique from './../assets/images/sieste_nord_sketch.jpg'
+import siesteNord from './../assets/images/sieste_nord_sketch.jpg'
+import plan3D1 from './../assets/images/plan3D-1.jpg'
+import plan3D2 from './../assets/images/plan3D-2.jpg'
+import plan3D3 from './../assets/images/plan3D-3.jpg'
+
+const datas = [
+	{
+		id: 1,
+		image: depliant,
+		alt: 'Flyer recto',
+	},
+	{
+		id: 2,
+		image: depliantPage2,
+		alt: 'Flyer verso',
+	},
+	{
+		id: 3,
+		image: siesteNord,
+		alt: 'Dessin représentant la sieste nordique',
+	},
+	{
+		id: 4,
+		image: plan3D1,
+		alt: 'Plan 3D du batiment',
+	},
+	{
+		id: 5,
+		image: plan3D2,
+		alt: 'Plan 3D du batiment',
+	},
+	{
+		id: 6,
+		image: plan3D3,
+		alt: 'Plan 3D du batiment',
+	},
+	{
+		id: 7,
+		image: microCreche,
+		alt: 'Image micro-crèche',
+	},
+]
 
 export default function Gallery() {
 	return (
-		<div className='gallery'>
-			<Swiper
-				effect={'coverflow'}
-				grabCursor={true}
-				centeredSlides={true}
-				loop={true}
-				slidesPerView={'auto'}
-				coverflowEffect={{
-					rotate: 0,
-					stretch: 0,
-					depth: 100,
-					modifier: 2.5,
-				}}
-				pagination={{ el: '.swiper-pagination', clickable: true }}
-				navigation={{
-					nextEl: 'swiper-button-next',
-					prevEl: 'swiper-button-prev',
-					clickable: true,
-				}}
-				modules={[EffectCoverflow, Pagination, Navigation]}
-				className='swiper_container'>
-				<SwiperSlide>
+		<Carousel
+			autoPlay
+			interval={4000}
+			infiniteLoop
+			thumbWidth={120}
+			showIndicators={false}
+			showStatus={false}
+			showArrows={false}
+			emulateTouch={true}>
+			{datas.map((slide) => (
+				<div key={slide.id}>
 					<img
-						src={flyerRecto}
-						alt="Flyer recto Les P'tits Lou"
+						src={slide.image}
+						alt={slide.alt}
 					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						src={flyerVerso}
-						alt="Flyer verso Les P'tits Lou"
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						src={microCreche}
-						alt='Image micro crèche'
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						src={siesteNordique}
-						alt='Image sieste nordique'
-					/>
-				</SwiperSlide>
-				<div className='slider-controler'>
-					<div className='swiper-button-prev slider-arrow'>
-						<box-icon name='arrow-back'></box-icon>
-					</div>
-					<div className='swiper-button-next slider-arrow'>
-						<box-icon name='arrow-forward'></box-icon>
-					</div>
-					<div className='swiper-pagination'></div>
 				</div>
-			</Swiper>
-		</div>
+			))}
+		</Carousel>
 	)
 }

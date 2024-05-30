@@ -14,12 +14,12 @@ export default function Objectifs() {
 				<h4 className='subtitle'>Unique et précieux</h4>
 				<p className='text'>
 					Du développement du langage et de l’alphabétisation aux compétences
-					sociales et à la créativité, les enfants de Les P&apos;tits Lou sont
-					constamment exposés à de nouvelles activités et à de nouveaux
-					environnements dans lesquels s’épanouir. Nous misons sur les forces et
-					les intérêts de chaque enfant pour les aider à bâtir une base solide
-					sur laquelle ils pourront compter pour développer leur avenir. Pour en
-					apprendre plus sur nous, contactez-nous.
+					sociales et à la créativité, les enfants de &ldquo;Les P&apos;tits Lou
+					&rdquo; sont constamment exposés à de nouvelles activités et à de
+					nouveaux environnements dans lesquels s’épanouir. Nous misons sur les
+					forces et les intérêts de chaque enfant pour les aider à bâtir une
+					base solide sur laquelle ils pourront compter pour développer leur
+					avenir. Pour en apprendre plus sur nous, contactez-nous.
 				</p>
 				<img
 					src={creche}
@@ -29,7 +29,7 @@ export default function Objectifs() {
 			<section className='part'>
 				<h4 className='subtitle'>Pour l&apos;épanouissement de votre enfant</h4>
 				<p className='text'>
-					Les p&apos;tits lou permettront une prise en charge de chaque enfant
+					Les P&apos;tits Lou permettront une prise en charge de chaque enfant
 					en tant qu’individu à part entière dans le respect de son rythme, de
 					ses besoins, de ses compétences et de se degré de compréhension… Il
 					s’agit avant tout pour l’équipe de préserver le bien-être de l’enfant

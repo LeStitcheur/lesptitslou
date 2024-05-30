@@ -1,11 +1,12 @@
 import './../css/footer.css'
 
+import audio from './../assets/songs/song.mp3'
+import Player from './Player'
+
 export default function Footer() {
 	return (
 		<footer>
-			<audio
-				src='./../assets/songs/song.mp3'
-				controls></audio>
+			<Player audioFile={audio} />
 			<div className='links'>
 				<a href='mailto:les.ptitslou57@gmail.com'>les.ptitslou57@gmail.com</a>
 				<a href='/mentions'>Mentions Légales</a>

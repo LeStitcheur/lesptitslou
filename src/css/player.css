@@ -1,0 +1,37 @@
+.player {
+	width: 100%;
+	min-height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.controls {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+
+.controls button {
+	background: none;
+	border: none;
+}
+
+input[type='range'] {
+	width: 100px;
+	height: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(243, 122, 23, 0.5);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	-webkit-appearance: none;
+	font-size: 0.8rem;
+}

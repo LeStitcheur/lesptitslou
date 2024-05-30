@@ -46,7 +46,7 @@ function App() {
 					element={<Pedagogie />}
 				/>
 				<Route
-					path='/sieste'
+					path='/siestes'
 					element={<Siestes />}
 				/>
 				<Route
