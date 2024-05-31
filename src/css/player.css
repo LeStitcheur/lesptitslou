@@ -13,11 +13,13 @@
 	justify-content: center;
 	align-items: center;
 	gap: 4rem;
+	margin-bottom: 50px;
 }
 
 .controls button {
 	background: none;
 	border: none;
+	cursor: pointer;
 }
 
 input[type='range'] {
@@ -34,4 +36,5 @@ input[type='range'] {
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	-webkit-appearance: none;
 	font-size: 0.8rem;
+	cursor: grab;
 }

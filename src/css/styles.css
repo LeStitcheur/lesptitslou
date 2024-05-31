@@ -23,4 +23,5 @@ body {
 	display: flex;
 	flex-flow: column nowrap;
 	background: #fefefe;
+	overflow-x: hidden;
 }

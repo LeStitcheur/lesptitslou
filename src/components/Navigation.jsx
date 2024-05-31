@@ -1,5 +1,5 @@
 // Importation de modules
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 
 //Importations Modules
 import { NavLink } from 'react-router-dom'
@@ -25,7 +25,8 @@ export default function Navigation() {
 							to='/'
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : undefined
-							}>
+							}
+							onClick={showNavBar}>
 							Accueil
 						</NavLink>
 					</li>
@@ -34,7 +35,8 @@ export default function Navigation() {
 							to='/decouvrir'
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : undefined
-							}>
+							}
+							onClick={showNavBar}>
 							Découvrir
 						</NavLink>
 					</li>
@@ -43,7 +45,8 @@ export default function Navigation() {
 							to='/objectifs'
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : undefined
-							}>
+							}
+							onClick={showNavBar}>
 							Notre objectif
 						</NavLink>
 					</li>
@@ -52,7 +55,8 @@ export default function Navigation() {
 							to='/contact'
 							className={({ isActive }) =>
 								isActive ? 'activeLink' : undefined
-							}>
+							}
+							onClick={showNavBar}>
 							Contact
 						</NavLink>
 					</li>

@@ -8,9 +8,15 @@ export default function Footer() {
 		<footer>
 			<Player audioFile={audio} />
 			<div className='links'>
-				<a href='mailto:les.ptitslou57@gmail.com'>les.ptitslou57@gmail.com</a>
-				<a href='/mentions'>Mentions Légales</a>
-				<a href='/confidentialite'>Politique de confidentialité</a>
+				<a href='mailto:les.ptitslou57@gmail.com'>
+					<b>►</b>les.ptitslou57@gmail.com<b>◄</b>
+				</a>
+				<a href='/mentions'>
+					<b>►</b>Mentions Légales<b>◄</b>
+				</a>
+				<a href='/confidentialite'>
+					<b>►</b>Politique de confidentialité<b>◄</b>
+				</a>
 			</div>
 			<p>
 				&copy; Les P&apos;tits Lou | 2024 | Développé par

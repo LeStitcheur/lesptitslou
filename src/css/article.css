@@ -1,0 +1,29 @@
+.article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.article > hr {
+	align-self: center;
+	width: 80%;
+	margin: 50px 0;
+}
+
+.article__title {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 60px 30px 60px;
+}
+
+.article__title > h4 {
+	font-size: 1.5rem;
+	color: #f37a17;
+}
+
+.article > p {
+	color: #3d9be9;
+	text-align: justify;
+}

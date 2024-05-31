@@ -1,0 +1,32 @@
+[
+    {
+        "id": "01.",
+        "title": "L'éditeur",
+        "content":"L’édition et la direction de la publication du site lesptitslou.com est assurée par Les P'tits Lou domicilé à 41 Boucle de la Tuilerie, 57970 Yutz et joignable au 0785919808."
+    },
+    {
+        "id": "02.",
+        "title": "L'hébergeur",
+        "content":"L'hébergeur du site les-pt-its-lou.com est la Société OVH localisé à Roubais en France."
+    },
+    {
+        "id": "03.",
+        "title": "Accès au site",
+        "content":"Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découler d’une nécessité de maintenance.\n\nEn cas de modification, interruption ou suspension des services le site les-pt-its-lou.com ne saurait être tenu responsable."
+    },
+    {
+        "id": "04.",
+        "title": "Collecte des données",
+        "content":"Le site assure à l'Utilisateur une collecte et un traitement d'informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. Le site n'est pas déclaré à la CNIL car il ne transite aucune de vos données personnelles.\n\nEn vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données personnelles. L'Utilisateur exerce ce droit : par mail à l’adresse mail"
+    },
+    {
+        "id": "05.",
+        "title": "Les cookies",
+        "content":"L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de navigation.\n\nEn naviguant sur le site, il les accepte.\n\nUn cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation."
+    },
+    {
+        "id": "06.",
+        "title": "Propriété intellectuelle",
+        "content":"Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site les-pt-its-lou.com , sans autorisation de l’Editeur est prohibée et pourra entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil."
+    }
+]

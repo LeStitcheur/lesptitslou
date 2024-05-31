@@ -82,3 +82,10 @@ textarea {
 	font-size: 1rem;
 	color: darkgreen;
 }
+
+@media only screen and (max-width: 1024px) {
+	.form-row {
+		flex-direction: column;
+		align-items: center;
+	}
+}

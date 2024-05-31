@@ -52,22 +52,27 @@ export default function Siestes() {
 					</p>
 				</div>
 			</div>
-			<ReactPlayer
-				url={url}
-				controls={true}
-				width='70%'
-				height='auto'
-			/>
+			<div className='player-wrapper'>
+				<ReactPlayer
+					className='react-player'
+					url={url}
+					controls={true}
+					width='100%'
+					height='100%'
+				/>
+			</div>
 
 			<div className='exemple-liste'>
 				<Exemple
 					image={ble}
 					alt="Image d'un champ de blé">
-					<h4>Les bienfaits de la sieste nordique</h4>
+					<h5>
+						Les bienfaits <br /> de la sieste nordique
+					</h5>
 					<p>
 						• Un grand bol d&apos;air frais pour améliorer la respiration et le
 						système immunitaire des enfants. <br />
-						• Des siestesplus longes. <br />
+						• Des siestes plus longues. <br />
 						• Ils s&apos;habituent aux bruits extérieurs. <br />• Plus de
 						flexibilité et de liberté pour vous.
 					</p>
@@ -75,7 +80,7 @@ export default function Siestes() {
 				<Exemple
 					image={baby}
 					alt="Image d'un bébé qui dort">
-					<h4>Les recommendations</h4>
+					<h5>Les recommendations</h5>
 					<p>
 						Il faut noter que la sieste nordique est prise de manière judicieuse
 						et dans la sécurité de l&apos;enfant. Celui-ci sera emmailloté dans

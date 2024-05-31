@@ -77,6 +77,10 @@
 	align-items: center;
 }
 
+.discover__header__accroche > p {
+	color: #3d9be9;
+}
+
 hr {
 	width: 75px;
 	height: 3px;

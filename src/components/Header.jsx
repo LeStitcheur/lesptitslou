@@ -1,5 +1,7 @@
 // Importation CSS
 import './../css/header.css'
+// Importation Medias
+import logo from './../assets/images/logo.png'
 
 export default function Header() {
 	return (
@@ -7,7 +9,7 @@ export default function Header() {
 			<div className='header__logo'>
 				<a href='/'>
 					<img
-						src='./assets/images/logo.png'
+						src={logo}
 						alt="Logo Les P'tits Lou"
 					/>
 				</a>
