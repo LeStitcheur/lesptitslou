@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-NRH27ZC3NK"></script>
+		<!-- Matomo -->
 		<script>
-			window.dataLayer = window.dataLayer || []
-			function gtag() {
-				dataLayer.push(arguments)
-			}
-			gtag('js', new Date())
-
-			gtag('config', 'G-NRH27ZC3NK')
+			var _paq = (window._paq = window._paq || [])
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(['trackPageView'])
+			_paq.push(['enableLinkTracking'])
+			;(function () {
+				var u = '//matomo.mywebsoluce.fr/'
+				_paq.push(['setTrackerUrl', u + 'matomo.php'])
+				_paq.push(['setSiteId', '2'])
+				var d = document,
+					g = d.createElement('script'),
+					s = d.getElementsByTagName('script')[0]
+				g.async = true
+				g.src = u + 'matomo.js'
+				s.parentNode.insertBefore(g, s)
+			})()
 		</script>
-		<!-- Google Tag Manager -->
-		<script>
-			;(function (w, d, s, l, i) {
-				w[l] = w[l] || []
-				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != 'dataLayer' ? '&l=' + l : ''
-				j.async = true
-				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-				f.parentNode.insertBefore(j, f)
-			})(window, document, 'script', 'dataLayer', 'GTM-MHMQZC44')
-		</script>
-		<!-- End Google Tag Manager -->
+		<!-- End Matomo Code -->
 
 		<meta charset="UTF-8" />
 		<link
