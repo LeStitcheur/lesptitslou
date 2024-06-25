@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-NRH27ZC3NK"></script>
+		<!-- Matomo -->
 		<script>
-			window.dataLayer = window.dataLayer || []
-			function gtag() {
-				dataLayer.push(arguments)
-			}
-			gtag('js', new Date())
-
-			gtag('config', 'G-NRH27ZC3NK')
+			var _paq = (window._paq = window._paq || [])
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(['trackPageView'])
+			_paq.push(['enableLinkTracking'])
+			;(function () {
+				var u = '//matomo.mywebsoluce.fr/'
+				_paq.push(['setTrackerUrl', u + 'matomo.php'])
+				_paq.push(['setSiteId', '2'])
+				var d = document,
+					g = d.createElement('script'),
+					s = d.getElementsByTagName('script')[0]
+				g.async = true
+				g.src = u + 'matomo.js'
+				s.parentNode.insertBefore(g, s)
+			})()
 		</script>
+		<!-- End Matomo Code -->
+
 		<meta charset="UTF-8" />
 		<link
 			rel="icon"
-			type="image/png"
-			href="./logo.png" />
+			type="image/webp"
+			href="./logo.webp" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<title>Les P'tits Lou</title>
-
-		<!-- Google Tag Manager -->
-		<script>
-			;(function (w, d, s, l, i) {
-				w[l] = w[l] || []
-				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != 'dataLayer' ? '&l=' + l : ''
-				j.async = true
-				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-				f.parentNode.insertBefore(j, f)
-			})(window, document, 'script', 'dataLayer', 'GTM-MHMQZC44')
-		</script>
-		<!-- End Google Tag Manager -->
 
 		<meta
 			name="description"
@@ -58,7 +50,7 @@
 			content="Les P'tits Lou, micro-chèche implenté à Yutz en Moselle" />
 		<meta
 			property="og:image"
-			content="./assets/logo.png" />
+			content="./assets/logo.webp" />
 
 		<!-- Twitter -->
 		<meta
@@ -75,9 +67,9 @@
 			content="Les P'tits Lou, micro-chèche implenté à Yutz en Moselle" />
 		<meta
 			property="twitter:image"
-			content="./assets/logo.png" />
-		<script type="module" crossorigin src="/assets/index-BILpgROQ.js"></script>
-		<link rel="stylesheet" crossorigin href="/assets/index-B4X3zE0z.css">
+			content="./assets/logo.webp" />
+		<script type="module" crossorigin src="/assets/index-Rpudvjw7.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/index-CqiTvll6.css">
 		<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 	</head>
 	<body>

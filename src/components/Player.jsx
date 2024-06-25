@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react'
-import WaveSurfer, { toggleScroll } from 'wavesurfer'
+import WaveSurfer from 'wavesurfer'
 
 import './../css/player.css'
 
@@ -20,7 +20,7 @@ const formWaveSurferOptions = (ref) => ({
 	mediaType: 'audio/mp3',
 })
 
-export default function Player({ audioFile }) {
+export default function Player(...audioFile) {
 	const waveformRef = useRef(null)
 	const wavesurfer = useRef(null)
 	const [playing, setPlaying] = useState(false)

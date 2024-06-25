@@ -49,8 +49,7 @@ export default function About() {
 					<p>
 						Pratique d&apos;activités d&apos;éveil et de découverte pour le
 						développement moteur, psychologique, affectif ainsi que l&apos;éveil
-						des sens grâce à l&apos;espace snoezelen dédié à fournir tout le
-						bien-être nécessaire à l&apos;enfant à travers les 5 sens.
+						des sens.
 					</p>
 				</div>
 				<div className='about__body__item'>
